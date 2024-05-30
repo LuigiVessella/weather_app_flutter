@@ -1,6 +1,6 @@
 # weather_two
 
-A new Flutter project.
+A Flutter weather app built with Riverpod's state management plugin.
 
 ## Getting Started
 
