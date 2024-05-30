@@ -31,7 +31,7 @@ class WeatherPage extends ConsumerWidget {
               ref.refresh(weatherRepositoryProvider).getCurrentWeather();
               ref.read(colorProvider.notifier).state = Colors.blue;
             },
-            child: const Text('Aggiorna'))
+            child: const Text('Aggiorna dati'))
       ]),
     );
   }
