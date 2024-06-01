@@ -7,5 +7,5 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 //definire il tipo di provider che vogliamo esporre
 
 final colorProvider = StateProvider<Color>((ref) {
-  return Colors.black;
+  return Colors.white;
 });
