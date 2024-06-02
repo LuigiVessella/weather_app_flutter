@@ -9,8 +9,12 @@ class CurrentWeatherMapper {
         temp: dto.main!.temp!,
         tempMin: dto.main!.tempMin!,
         tempMax: dto.main!.tempMax!,
+        feelsLike: dto.main!.feelsLike!,
         pressure: dto.main!.pressure!,
-        humidity: dto.main!.humidity!
+        humidity: dto.main!.humidity!,
+        windSpeed: dto.wind!.speed!,
+        icon: dto.weather![0].icon!
+    
       );
   }
 }

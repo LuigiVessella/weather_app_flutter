@@ -17,14 +17,15 @@ class MyApp extends ConsumerWidget {
     final AsyncValue<CurrentWeatherEntity> weather = ref.watch(weatherProvider);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: ref.watch(colorProvider),
-        appBar: AppBar(title: const Text('Meteo')),
-        body: Center(
+        backgroundColor: Colors.blue.shade200,
+       
+        body: SafeArea(
           child: switch (weather) {
             AsyncData(:final value) => WeatherPage(data: value),
             AsyncError() => const Text('Oops, something unexpected happened'),
-            _ => const CircularProgressIndicator(),
+            _ => const Center(child:  CircularProgressIndicator(color: Colors.blue,)),
           },
         ),
       ),
